@@ -1,0 +1,23 @@
+﻿@model TMS.Models.Database.Entity.ADinfoModel
+@{
+    ViewBag.Title = "RegisterAD";
+}
+
+<h2>RegisterAD</h2>
+
+<form action="/Advertiser/RegisterAD" method="post">
+
+    <input type="text" class="form-control" name="advertisename" placeholder="Username Name" />
+    @Html.ValidationMessageFor(model => model.advertisename)
+    <input type="text" class="form-control" name="advertisetype" placeholder="Password" />
+    @Html.ValidationMessageFor(model => model.advertisetype)
+    <input type="text" class="form-control" name="advertisebudget" placeholder="Budget" />
+    @Html.ValidationMessageFor(model => model.advertisebudget)
+    <input type="text" class="form-control" name="contactno" placeholder="Contact" />
+    @Html.ValidationMessageFor(model => model.contactno)
+
+    <input type="submit" value="Create" class="btn btn-success" />
+
+
+</form>
+
