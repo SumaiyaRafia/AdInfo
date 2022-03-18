@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3f838d28c2924e31b88d6fce6a1d6994" Name="Diagram1">
+        <EntityTypeShape EntityType="ADModel.ADinfo" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ADModel.Admin" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ADModel.AdvertiserInfo" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ADModel.Booking" Width="1.5" PointX="12" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ADModel.Client" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ADModel.Employee" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ADModel.Package" Width="1.5" PointX="9.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ADModel.User" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <AssociationConnector Association="ADModel.FK_ADinfo_AdvertiserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="ADModel.FK_Admin_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ADModel.FK_Employee_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="ADModel.FK_Booking_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="ADModel.FK_Client_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="ADModel.FK_Package_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="ADModel.FK_Employee_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ADModel.FK_Package_Employee" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
